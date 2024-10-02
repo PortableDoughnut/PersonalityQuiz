@@ -43,18 +43,44 @@ class QuestionViewController: UIViewController {
 		singleAnswerStackView.isHidden = true
 		multipleAnswerStackView.isHidden = true
 		
-		navigationItem.title = "Question #\(questionIndex + 1)"
-		
 		let currentQuestion = questions[questionIndex]
+		let currentAnswers = currentQuestion.answer
+		let totalProgress = Float(questionIndex + 1) / Float(questions.count)
+		
+		navigationItem.title = "Question #\(questionIndex + 1)"
+		questionLabel.text = currentQuestion.text
+		questionProgressView.setProgress(totalProgress, animated: true)
 		
 		switch currentQuestion.type {
 			case .ranged:
-				rangeAnswerStackView.isHidden = false
+				updateRangedStack(using: currentAnswers)
 			case .multiple:
-				multipleAnswerStackView.isHidden = false
+				updateMultipleStack(using: currentAnswers)
 			case .single:
-				singleAnswerStackView.isHidden = false
+				updateSingleStack(using: currentAnswers)
 		}
+	}
+	
+	func updateSingleStack(using answers: [Answer]) {
+		singleAnswerStackView.isHidden = false
+		singleButtonOne.setTitle(answers[0].text, for: .normal)
+		singleButtonTwo.setTitle(answers[1].text, for: .normal)
+		singeButtonThree.setTitle(answers[2].text, for: .normal)
+		singleButtonFour.setTitle(answers[3].text, for: .normal)
+	}
+	
+	func updateMultipleStack(using answers: [Answer]) {
+		multipleAnswerStackView.isHidden = false
+		multipleLabelOne.text = answers[0].text
+		multipleLabelTwo.text = answers[1].text
+		multipleLabelThree.text = answers[2].text
+		multipleLabelFour.text = answers[3].text
+	}
+	
+	func updateRangedStack(using answers: [Answer]) {
+		rangeAnswerStackView.isHidden = false
+		rangeLabelOne.text = answers[0].text
+		rangeLabelTwo.text = answers[3].text
 	}
     
 

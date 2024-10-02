@@ -58,7 +58,7 @@ enum Line: Character {
 }
 
 var questions: [Question] = [
-	Question(text: "How long do you like to spend on the train?", type: .ranged, answer: [Answer(text: "I don't ride the train", type: .yellow), Answer(text: "I like to spend a little but of time on the train", type: .pink), Answer(text: "I like to spend a moderate amount of time on the train", type: .brown), Answer(text: "I spend a lot of time on the train and it's great", type: .blue)]),
+	Question(text: "How long do you like to spend on the train?", type: .ranged, answer: [Answer(text: "Never", type: .yellow), Answer(text: "I like to spend a little but of time on the train", type: .pink), Answer(text: "I like to spend a moderate amount of time on the train", type: .brown), Answer(text: "Always", type: .blue)]),
 	Question(text: "Single choice TODO", type: .single, answer: [Answer(text: "TODO", type: .red), Answer(text: "TODO", type: .green), Answer(text: "TODO", type: .yellow), Answer(text: "TODO", type: .blue)]),
 	Question(text: "Multiple choice TODO", type: .multiple, answer: [Answer(text: "TODO", type: .red), Answer(text: "TODO", type: .green), Answer(text: "TODO", type: .yellow), Answer(text: "TODO", type: .blue)])
 ]
