@@ -104,21 +104,33 @@
                                         <rect key="frame" x="0.0" y="0.0" width="75" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="xP7-qy-u88" eventType="touchUpInside" id="Krp-es-TVO"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cU-Qo-4W8">
                                         <rect key="frame" x="0.0" y="54.333333333333371" width="75" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="xP7-qy-u88" eventType="touchUpInside" id="Vfg-XS-R0d"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="73G-wf-Flb">
                                         <rect key="frame" x="0.0" y="108.66666666666669" width="75" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="xP7-qy-u88" eventType="touchUpInside" id="wZq-gL-JZl"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXg-Kk-fCY">
                                         <rect key="frame" x="0.0" y="163.00000000000006" width="75" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="xP7-qy-u88" eventType="touchUpInside" id="aHr-DW-HND"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

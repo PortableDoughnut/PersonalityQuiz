@@ -31,6 +31,7 @@ class QuestionViewController: UIViewController {
 	
 	
 	var questionIndex: Int = 0
+	var answersChosen: [Answer] = []
 	
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +84,9 @@ class QuestionViewController: UIViewController {
 		rangeLabelTwo.text = answers[3].text
 	}
     
-
+	@IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+	}
+	
     /*
     // MARK: - Navigation
 
