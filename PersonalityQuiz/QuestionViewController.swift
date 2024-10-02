@@ -12,6 +12,24 @@ class QuestionViewController: UIViewController {
 	@IBOutlet weak var singleAnswerStackView: UIStackView!
 	@IBOutlet weak var multipleAnswerStackView: UIStackView!
 	
+	@IBOutlet weak var questionLabel: UILabel!
+	
+	@IBOutlet weak var rangeLabelOne: UILabel!
+	@IBOutlet weak var rangeLabelTwo: UILabel!
+	
+	@IBOutlet weak var singleButtonOne: UIButton!
+	@IBOutlet weak var singleButtonTwo: UIButton!
+	@IBOutlet weak var singeButtonThree: UIButton!
+	@IBOutlet weak var singleButtonFour: UIButton!
+	
+	@IBOutlet weak var multipleLabelOne: UILabel!
+	@IBOutlet weak var multipleLabelTwo: UILabel!
+	@IBOutlet weak var multipleLabelThree: UILabel!
+	@IBOutlet weak var multipleLabelFour: UILabel!
+	
+	@IBOutlet weak var questionProgressView: UIProgressView!
+	
+	
 	var questionIndex: Int = 0
 	
     override func viewDidLoad() {
