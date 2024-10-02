@@ -19,13 +19,17 @@ class QuestionViewController: UIViewController {
 	
 	@IBOutlet weak var singleButtonOne: UIButton!
 	@IBOutlet weak var singleButtonTwo: UIButton!
-	@IBOutlet weak var singeButtonThree: UIButton!
+	@IBOutlet weak var singleButtonThree: UIButton!
 	@IBOutlet weak var singleButtonFour: UIButton!
 	
 	@IBOutlet weak var multipleLabelOne: UILabel!
 	@IBOutlet weak var multipleLabelTwo: UILabel!
 	@IBOutlet weak var multipleLabelThree: UILabel!
 	@IBOutlet weak var multipleLabelFour: UILabel!
+	@IBOutlet weak var multipleSwitchOne: UISwitch!
+	@IBOutlet weak var multipleSwitchTwo: UISwitch!
+	@IBOutlet weak var multipleSwitchThree: UISwitch!
+	@IBOutlet weak var multipleSwitchFour: UISwitch!
 	
 	@IBOutlet weak var questionProgressView: UIProgressView!
 	
@@ -66,7 +70,7 @@ class QuestionViewController: UIViewController {
 		singleAnswerStackView.isHidden = false
 		singleButtonOne.setTitle(answers[0].text, for: .normal)
 		singleButtonTwo.setTitle(answers[1].text, for: .normal)
-		singeButtonThree.setTitle(answers[2].text, for: .normal)
+		singleButtonThree.setTitle(answers[2].text, for: .normal)
 		singleButtonFour.setTitle(answers[3].text, for: .normal)
 	}
 	
@@ -85,6 +89,22 @@ class QuestionViewController: UIViewController {
 	}
     
 	@IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+		let currentAnswers = questions[questionIndex].answer
+		
+		switch sender {
+		case singleButtonOne:
+			answersChosen.append(currentAnswers[0])
+		case singleButtonTwo:
+			answersChosen.append(currentAnswers[1])
+		case singleButtonThree:
+			answersChosen.append(currentAnswers[2])
+		case singleButtonFour:
+			answersChosen.append(currentAnswers[3])
+		default:
+			break
+		}
+		
+		nextQuestion()
 	}
 	
     /*

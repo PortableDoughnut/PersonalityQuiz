@@ -233,15 +233,19 @@
                         <outlet property="multipleLabelOne" destination="eFl-TM-YSo" id="5BY-BE-F0l"/>
                         <outlet property="multipleLabelThree" destination="LZZ-e1-tR0" id="4ZF-mR-h7X"/>
                         <outlet property="multipleLabelTwo" destination="xES-RF-9Lv" id="dgW-qM-Vvk"/>
+                        <outlet property="multipleSwitchFour" destination="gLF-8c-m8g" id="6fL-ex-xJU"/>
+                        <outlet property="multipleSwitchOne" destination="EC4-uA-2CZ" id="fGI-kC-6W2"/>
+                        <outlet property="multipleSwitchThree" destination="0c6-mM-bdP" id="wiR-aa-knl"/>
+                        <outlet property="multipleSwitchTwo" destination="lrh-J9-cz2" id="Kgy-aV-oo1"/>
                         <outlet property="questionLabel" destination="Nr1-Yr-NIg" id="RLb-uL-63E"/>
                         <outlet property="questionProgressView" destination="JgN-S2-wdg" id="W0J-6N-xwR"/>
                         <outlet property="rangeAnswerStackView" destination="zWF-Cy-VwI" id="h2f-qR-l2m"/>
                         <outlet property="rangeLabelOne" destination="IKP-kD-qE7" id="GfF-2M-WPv"/>
                         <outlet property="rangeLabelTwo" destination="ofw-OQ-xb4" id="R2N-5t-sSA"/>
-                        <outlet property="singeButtonThree" destination="73G-wf-Flb" id="yMT-qi-c7T"/>
                         <outlet property="singleAnswerStackView" destination="Sjt-Ro-mBD" id="a7J-Yh-iRj"/>
                         <outlet property="singleButtonFour" destination="JXg-Kk-fCY" id="dv0-aZ-Jxt"/>
                         <outlet property="singleButtonOne" destination="P4C-Tb-Q7o" id="Neb-6d-TTJ"/>
+                        <outlet property="singleButtonThree" destination="73G-wf-Flb" id="yMT-qi-c7T"/>
                         <outlet property="singleButtonTwo" destination="5cU-Qo-4W8" id="XaL-N6-UC2"/>
                         <segue destination="qiY-zM-EkX" kind="show" identifier="Results" id="L4E-aS-0F9"/>
                     </connections>
