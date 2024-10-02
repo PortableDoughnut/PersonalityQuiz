@@ -108,7 +108,22 @@ class QuestionViewController: UIViewController {
 	}
 	
 	@IBAction func multipleAnswerSwitchPressed(_ sender: UISwitch) {
+		let currentAnswers = questions[questionIndex].answer
 		
+		if multipleSwitchOne.isOn {
+			answersChosen.append(currentAnswers[0])
+		}
+		if multipleSwitchTwo.isOn {
+			answersChosen.append(currentAnswers[1])
+		}
+		if multipleSwitchThree.isOn {
+			answersChosen.append(currentAnswers[2])
+		}
+		if multipleSwitchFour.isOn {
+			answersChosen.append(currentAnswers[3])
+		}
+		
+		nextQuestion()
 	}
 	
 	/*
