@@ -8,7 +8,12 @@
 import UIKit
 
 class QuestionViewController: UIViewController {
-
+	@IBOutlet weak var rangeAnswerStackView: UIStackView!
+	@IBOutlet weak var singleAnswerStackView: UIStackView!
+	@IBOutlet weak var multipleAnswerStackView: UIStackView!
+	
+	var questionIndex: Int = 0
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
