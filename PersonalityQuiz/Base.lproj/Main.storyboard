@@ -148,6 +148,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-uA-2CZ">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="30.666666666666668"/>
+                                                <connections>
+                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="p6G-Ob-gjh"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -162,6 +165,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-J9-cz2">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="e0m-S2-PHA"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -176,6 +182,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0c6-mM-bdP">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="ZKR-Zs-MFY"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -190,6 +199,9 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-8c-m8g">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="7jr-qd-6bU"/>
+                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
