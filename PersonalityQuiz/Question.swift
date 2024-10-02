@@ -62,3 +62,4 @@ var questions: [Question] = [
 	Question(text: "Single choice TODO", type: .single, answer: [Answer(text: "TODO", type: .red), Answer(text: "TODO", type: .green), Answer(text: "TODO", type: .yellow), Answer(text: "TODO", type: .blue)]),
 	Question(text: "Multiple choice TODO", type: .multiple, answer: [Answer(text: "TODO", type: .red), Answer(text: "TODO", type: .green), Answer(text: "TODO", type: .yellow), Answer(text: "TODO", type: .blue)])
 ]
+

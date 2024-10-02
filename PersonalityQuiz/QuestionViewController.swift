@@ -17,8 +17,27 @@ class QuestionViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+		updateUI()
     }
+	
+	func updateUI() {
+		rangeAnswerStackView.isHidden = true
+		singleAnswerStackView.isHidden = true
+		multipleAnswerStackView.isHidden = true
+		
+		navigationItem.title = "Question #\(questionIndex + 1)"
+		
+		let currentQuestion = questions[questionIndex]
+		
+		switch currentQuestion.type {
+			case .ranged:
+				rangeAnswerStackView.isHidden = false
+			case .multiple:
+				multipleAnswerStackView.isHidden = false
+			case .single:
+				singleAnswerStackView.isHidden = false
+		}
+	}
     
 
     /*
