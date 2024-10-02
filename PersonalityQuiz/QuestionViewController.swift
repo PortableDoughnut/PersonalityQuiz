@@ -125,8 +125,16 @@ class QuestionViewController: UIViewController {
 		}
 		
 		nextQuestion()
-	}	
+	}
 	
+	@IBAction func rangeAnswerButtonPressed(_ sender: UIButton) {
+		let currentAnswers = questions[questionIndex].answer
+		let index = Int(round(rangeSlider.value * Float(currentAnswers.count - 1)))
+		
+		answersChosen.append(currentAnswers[index])
+		
+		nextQuestion()
+	}
 	
 	/*
     // MARK: - Navigation
