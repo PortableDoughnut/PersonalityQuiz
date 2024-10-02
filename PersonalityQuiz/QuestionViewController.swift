@@ -14,6 +14,7 @@ class QuestionViewController: UIViewController {
 	
 	@IBOutlet weak var questionLabel: UILabel!
 	
+	@IBOutlet weak var rangeSlider: UISlider!
 	@IBOutlet weak var rangeLabelOne: UILabel!
 	@IBOutlet weak var rangeLabelTwo: UILabel!
 	
@@ -107,7 +108,7 @@ class QuestionViewController: UIViewController {
 		nextQuestion()
 	}
 	
-	@IBAction func multipleAnswerSwitchPressed(_ sender: UISwitch) {
+	@IBAction func multipleAnswerButtonPressed(_ sender: UIButton) {
 		let currentAnswers = questions[questionIndex].answer
 		
 		if multipleSwitchOne.isOn {
@@ -124,7 +125,8 @@ class QuestionViewController: UIViewController {
 		}
 		
 		nextQuestion()
-	}
+	}	
+	
 	
 	/*
     // MARK: - Navigation

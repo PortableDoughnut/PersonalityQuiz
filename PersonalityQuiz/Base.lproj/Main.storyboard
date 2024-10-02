@@ -148,9 +148,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EC4-uA-2CZ">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="30.666666666666668"/>
-                                                <connections>
-                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="p6G-Ob-gjh"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -165,9 +162,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lrh-J9-cz2">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="e0m-S2-PHA"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -182,9 +176,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0c6-mM-bdP">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="ZKR-Zs-MFY"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -199,9 +190,6 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gLF-8c-m8g">
                                                 <rect key="frame" x="89.666666666666686" y="0.0" width="51" height="31"/>
-                                                <connections>
-                                                    <action selector="multipleAnswerSwitchPressed:" destination="xP7-qy-u88" eventType="valueChanged" id="7jr-qd-6bU"/>
-                                                </connections>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -209,6 +197,9 @@
                                         <rect key="frame" x="0.0" y="203.66666666666663" width="138.66666666666666" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed:" destination="xP7-qy-u88" eventType="touchUpInside" id="gaw-D5-tdE"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -254,6 +245,7 @@
                         <outlet property="rangeAnswerStackView" destination="zWF-Cy-VwI" id="h2f-qR-l2m"/>
                         <outlet property="rangeLabelOne" destination="IKP-kD-qE7" id="GfF-2M-WPv"/>
                         <outlet property="rangeLabelTwo" destination="ofw-OQ-xb4" id="R2N-5t-sSA"/>
+                        <outlet property="rangeSlider" destination="RPq-bf-9MW" id="NSa-MO-hD8"/>
                         <outlet property="singleAnswerStackView" destination="Sjt-Ro-mBD" id="a7J-Yh-iRj"/>
                         <outlet property="singleButtonFour" destination="JXg-Kk-fCY" id="dv0-aZ-Jxt"/>
                         <outlet property="singleButtonOne" destination="P4C-Tb-Q7o" id="Neb-6d-TTJ"/>
