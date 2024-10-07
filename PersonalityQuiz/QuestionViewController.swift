@@ -44,6 +44,25 @@ class QuestionViewController: UIViewController {
 		updateUI()
     }
 	
+	@IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
+		let currentAnswers = questions[questionIndex].answer
+		
+		switch sender {
+			case singleButtonOne:
+				answersChosen.append(currentAnswers[0])
+			case singleButtonTwo:
+				answersChosen.append(currentAnswers[1])
+			case singleButtonThree:
+				answersChosen.append(currentAnswers[2])
+			case singleButtonFour:
+				answersChosen.append(currentAnswers[3])
+			default:
+				break
+		}
+		
+		nextQuestion()
+	}
+	
 	func updateUI() {
 		rangeAnswerStackView.isHidden = true
 		singleAnswerStackView.isHidden = true
