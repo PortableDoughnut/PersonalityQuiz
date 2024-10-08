@@ -161,6 +161,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hbm-FY-azD">
                                                 <rect key="frame" x="341" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.96862745100000003" green="0.098039215690000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -175,6 +176,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="koW-t6-t0L">
                                                 <rect key="frame" x="341" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.96862745100000003" green="0.098039215690000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -189,6 +191,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ixY-89-VLF">
                                                 <rect key="frame" x="341" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.96862745100000003" green="0.098039215690000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
@@ -203,6 +206,7 @@
                                             </label>
                                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cuP-2r-ezi">
                                                 <rect key="frame" x="341" y="0.0" width="51" height="31"/>
+                                                <color key="onTintColor" red="0.96862745100000003" green="0.098039215690000001" blue="0.019607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </switch>
                                         </subviews>
                                     </stackView>
