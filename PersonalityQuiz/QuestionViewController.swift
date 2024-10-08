@@ -87,6 +87,12 @@ class QuestionViewController: UIViewController {
 	
 	func updateMultipleStack(using answers: [Answer]) {
 		multipleAnswerStackView.isHidden = false
+		
+		multipleSwitchOne.isOn = false
+		multipleSwitchTwo.isOn = false
+		multipleSwitchThree.isOn = false
+		multipleSwitchFour.isOn = false
+		
 		multipleLabelOne.text = answers[0].text
 		multipleLabelTwo.text = answers[1].text
 		multipleLabelThree.text = answers[2].text
