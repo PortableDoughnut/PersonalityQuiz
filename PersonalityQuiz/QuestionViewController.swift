@@ -101,6 +101,9 @@ class QuestionViewController: UIViewController {
 	
 	func updateRangedStack(using answers: [Answer]) {
 		rangeAnswerStackView.isHidden = false
+		
+		rangeSlider.setValue(0.5, animated: false)
+		
 		rangeLabelOne.text = answers[0].text
 		rangeLabelTwo.text = answers[3].text
 	}
