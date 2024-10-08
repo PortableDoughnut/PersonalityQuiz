@@ -42,6 +42,18 @@ enum Line: Character {
 			case .orange: return "Orange"
 		}
 	}
+	
+	var definition: String {
+		switch self {
+		case .red: return "Red is the color of passion, anger, and excitement."
+		case .green: return "Green is the color of nature, growth, and harmony."
+		case .blue: return "Blue is the color of the sky, water, and the ocean."
+		case .pink: return "Pink is the color of love, romance, and happiness."
+		case .brown: return "Brown is the color of earth, soil, and the natural world."
+		case .orange: return "Orange is the color of energy, excitement, and enthusiasm."
+		case .purple: return "Purple is the color of royalty, nobility, and elegance."
+		}
+	}
 }
 
 var questions: [Question] = [

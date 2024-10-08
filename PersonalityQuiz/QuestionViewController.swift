@@ -99,6 +99,10 @@ class QuestionViewController: UIViewController {
 		multipleLabelFour.text = answers[3].text
 	}
 	
+	@IBSegueAction func showResults(_ coder: NSCoder) -> ResultsViewController? {
+		return ResultsViewController(coder: coder, responses: answersChosen)
+	}
+	
 	func updateRangedStack(using answers: [Answer]) {
 		rangeAnswerStackView.isHidden = false
 		

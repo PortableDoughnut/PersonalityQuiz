@@ -8,6 +8,8 @@
 import UIKit
 
 class ResultsViewController: UIViewController {
+	@IBOutlet weak var resultAnswerLabel: UILabel!
+	@IBOutlet weak var resultDefinitionLabel: UILabel!
 	
 	var responses: [Answer]
 
@@ -22,10 +24,56 @@ class ResultsViewController: UIViewController {
 	
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+		
+		calculatePersonalityResult()
+		
+		navigationItem.hidesBackButton = true
     }
+	
+	@IBAction func unwindToQuizIntroduction(segue: UIStoryboardSegue) {
+		
+	}
     
+	func calculatePersonalityResult() {
+		let frequencyOfAnswers = responses.reduce(into: [:]) {
+			(counts, answer) in
+			counts[answer.type, default: 0] += 1
+		}
+		
+		let frequentAnswersSorted = frequencyOfAnswers.sorted(by: {
+			(pair1, pair2) in
+			return pair1.value > pair2.value
+		})
+		
+		let mostCommonAnswer = frequencyOfAnswers.sorted { $0.1 > $1.1 }.first!.key
+		
+		resultAnswerLabel.text = "You are the \(mostCommonAnswer.string) line!"
+		resultDefinitionLabel.text = mostCommonAnswer.definition
+		
+		switch mostCommonAnswer {
+		case .red:
+			resultAnswerLabel.textColor = .red
+			resultDefinitionLabel.textColor = .red
+		case .green:
+			resultAnswerLabel.textColor = .green
+			resultDefinitionLabel.textColor = .green
+		case .blue:
+			resultAnswerLabel.textColor = .blue
+			resultDefinitionLabel.textColor = .blue
+		case .pink:
+			resultAnswerLabel.textColor = .systemPink
+			resultDefinitionLabel.textColor = .systemPink
+		case .purple:
+			resultDefinitionLabel.textColor = .purple
+			resultAnswerLabel.textColor = .purple
+		case .brown:
+			resultAnswerLabel.textColor = .brown
+			resultDefinitionLabel.textColor = .brown
+		case .orange:
+			resultAnswerLabel.textColor = .orange
+			resultDefinitionLabel.textColor = .orange
+		}
+	}
 
     /*
     // MARK: - Navigation

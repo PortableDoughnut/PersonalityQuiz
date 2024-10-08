@@ -3,6 +3,7 @@
     <device id="retina6_72" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,7 +31,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Let's Find Out!">
                                             <backgroundConfiguration key="background">
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="backgroundColor" name="AccentColor"/>
                                             </backgroundConfiguration>
                                         </buttonConfiguration>
                                         <connections>
@@ -253,7 +254,7 @@
                         <outlet property="singleButtonOne" destination="P4C-Tb-Q7o" id="Neb-6d-TTJ"/>
                         <outlet property="singleButtonThree" destination="73G-wf-Flb" id="yMT-qi-c7T"/>
                         <outlet property="singleButtonTwo" destination="5cU-Qo-4W8" id="XaL-N6-UC2"/>
-                        <segue destination="qiY-zM-EkX" kind="show" identifier="Results" id="L4E-aS-0F9"/>
+                        <segue destination="qiY-zM-EkX" kind="show" identifier="Results" destinationCreationSelector="showResults:" id="L4E-aS-0F9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u6F-Ie-cm4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -277,7 +278,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5f-1H-nq7">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q5f-1H-nq7">
                                         <rect key="frame" x="181" y="48.666666666666629" width="52" height="26.333333333333329"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                         <nil key="textColor"/>
@@ -295,10 +296,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Results" id="XJQ-ET-mcU">
-                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="uGf-kT-gnd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="uGf-kT-gnd">
+                            <connections>
+                                <action selector="unwindToQuizIntroductionWithSegue:" destination="qiY-zM-EkX" id="6Pr-fX-a9O"/>
+                                <segue destination="hxs-Of-n5j" kind="unwind" unwindAction="unwindToQuizIntroductionWithSegue:" id="x5r-I5-UOA"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultAnswerLabel" destination="bv0-ra-vf2" id="6NO-Y2-OH1"/>
+                        <outlet property="resultDefinitionLabel" destination="Q5f-1H-nq7" id="L1O-xi-xWT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tLf-78-bvP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="hxs-Of-n5j" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2412.5581395348836" y="3.8626609442060089"/>
         </scene>
@@ -323,6 +334,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
