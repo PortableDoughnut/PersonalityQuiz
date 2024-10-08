@@ -38,30 +38,21 @@ class QuestionViewController: UIViewController {
 	var questionIndex: Int = 0
 	var answersChosen: [Answer] = []
 	
+	func nextQuestion() {
+		questionIndex += 1
+		
+		if questionIndex < questions.count {
+			updateUI()
+		} else {
+			performSegue(withIdentifier: "Results", sender: nil)
+		}
+	}
+	
     override func viewDidLoad() {
         super.viewDidLoad()
 
 		updateUI()
     }
-	
-	@IBAction func singleAnswerButtonPressed(_ sender: UIButton) {
-		let currentAnswers = questions[questionIndex].answer
-		
-		switch sender {
-			case singleButtonOne:
-				answersChosen.append(currentAnswers[0])
-			case singleButtonTwo:
-				answersChosen.append(currentAnswers[1])
-			case singleButtonThree:
-				answersChosen.append(currentAnswers[2])
-			case singleButtonFour:
-				answersChosen.append(currentAnswers[3])
-			default:
-				break
-		}
-		
-		nextQuestion()
-	}
 	
 	func updateUI() {
 		rangeAnswerStackView.isHidden = true
@@ -113,12 +104,16 @@ class QuestionViewController: UIViewController {
 		
 		switch sender {
 		case singleButtonOne:
+			print("Button One")
 			answersChosen.append(currentAnswers[0])
 		case singleButtonTwo:
+			print("Button Two")
 			answersChosen.append(currentAnswers[1])
 		case singleButtonThree:
+			print("Button Three")
 			answersChosen.append(currentAnswers[2])
 		case singleButtonFour:
+			print("Button Four")
 			answersChosen.append(currentAnswers[3])
 		default:
 			break
