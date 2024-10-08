@@ -17,17 +17,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="430" height="932"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalCentering" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-vC-1zZ">
-                                <rect key="frame" x="8" y="398" width="394" height="136"/>
+                            <stackView opaque="NO" contentMode="center" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3EG-vC-1zZ">
+                                <rect key="frame" x="8" y="240.33333333333334" width="394" height="451.33333333333326"/>
                                 <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Brown Line" translatesAutoresizingMaskIntoConstraints="NO" id="bWu-cE-0hc">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="295.33333333333331"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bWu-cE-0hc" secondAttribute="height" multiplier="4:3" id="kVx-bD-WWi"/>
+                                        </constraints>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Which Train Line in Chicago are you?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qae-9J-Cnj">
-                                        <rect key="frame" x="56.666666666666686" y="0.0" width="281" height="81.666666666666671"/>
+                                        <rect key="frame" x="56.666666666666686" y="315.33333333333326" width="281" height="81.666666666666686"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-Vj-MDn">
-                                        <rect key="frame" x="129.66666666666666" y="101.66666666666669" width="134.99999999999997" height="34.333333333333343"/>
+                                        <rect key="frame" x="129.66666666666666" y="417" width="134.99999999999997" height="34.333333333333314"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Let's Find Out!">
                                             <backgroundConfiguration key="background">
@@ -334,6 +340,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Brown Line" width="1024" height="768"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
